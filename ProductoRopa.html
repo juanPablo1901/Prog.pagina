@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos Productos</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+
+    <header class="header"> 
+        <div class="contenedor">
+            <div><h1 class="title">MODANOW</h1></div> 
+            <nav class="nav">
+                <a href="index.html" class="nav_link"> <img src="img/casa.png"> </a> 
+                <a href="Ropa.html" class="nav_link"> <img src="img/moda.png"> </a> 
+                <a href="Contacto.html" class="nav_link"> <img src="img/atencion-al-cliente.png"> </a>
+                <a href="IniciarSesion.html" class="nav_link"> <img src="img/avatar.png" >  </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="Formulario"> 
+        <form class="Usuario" action="/productos" method="POST">
+            <di>
+                <label for="Nombre_Producto">Nombre del producto:</label>
+                <input type="text" id="Nombre_Producto" name="Nombre_Producto" required placeholder="Nombre del producto">
+            </di>
+            <br>
+            <div>
+                <label for="Valor_Producto">Precio del producto:</label>
+                <input type="number" id="Valor_Producto" name="Valor_Producto" required placeholder="Precio del producto">
+            </div>
+            <br>
+            <div>
+                <label for="Cantidad_Productos">Cantidad Producto:</label>
+                <input type="number" id="Cantidad_Productos" name="Cantidad_Productos" required placeholder="Cantidad Producto">
+            </div>
+            <br>
+            <div>
+                <label for="Marca_Producto">Marca del Producto:</label>
+                <input type="text" id="Marca_Producto" name="Marca_Producto" required placeholder="Marca del Producto">
+            </div>
+            <br>
+            <div>
+                <label for="Nit_Producto">Nit del Producto:</label>
+                <input type="text" id="Nit_Producto" name="Nit_Producto" required placeholder="Nit del Producto">
+            </div>
+            <br>
+            <div>
+                <label for="Fecha_Devolucion">Fecha de devolución:</label>
+                <input type="date" id="Fecha_Devolucion" name="Fecha_Devolucion" required placeholder="Fecha de devolución">
+            </div>
+            <br>
+            <div class="boton">
+                <button type="submit">Registrar Producto</button>
+            </div>
+            <br>
+            <div class="label">
+                <a href="/logout">Cerrar sesión</a>
+            </div>
+        </form>
+    </section>
+    
+    <br>
+    <br>
+
+    <footer class="footer text-center">
+        <div class="Contacto">
+            <div class="row">
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Creador:</h4>
+                    <p class="lead mb-0">
+                        <a href="mailto: juanpagarsi18Qgmail.com">Juan Pablo Castañeda silva</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes sociales: </h4>
+                    <a href="#">
+                        <img alt="" src="img/facebook.png" loading="lazy">
+                    </a>
+
+                    <a href="#">
+                        <img alt="" src="img/instagram.png" loading="lazy">
+                    </a>
+
+                    <a href="#">
+                        <img alt="" src="img/whatsapp.png" loading="lazy">
+                    </a>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Imagenes de:</h4>
+                    <a href="https://www.flaticon.es/iconos-gratis/esquema-de-persona" title="esquema de persona iconos">Iconos de Flaticon</a><br>
+                    <a href="https://www.freepik.es/foto-gratis/retrato-hermosa-modelo-gafas-sol-mujer-vestida-jeans-camiseta-blanca-verano-hipster-chica-moda-posando-junto-pared-calle_16506626.htm#query=modelos%20de%20ropa&position=11&from_view=keyword&track=ais_hybrid&uuid=baba0d4d-01b8-4666-ab6e-923222606982"> Imagenes de Freepik</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="Contacto"><small>Copyright &copy; 2024 </small></div>
+    </div>
+    
+</body>
+</html>

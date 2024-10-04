@@ -1,0 +1,712 @@
+*{
+font-family: 'Agbalumo' ,sans-serif;
+margin: 0;
+padding: 0;
+font-size: 20px;
+flex-flow: row wrap;
+}
+
+.allan-regular {
+    font-family: "Allan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+/*Cabecera del sitio web*/
+.header{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #BBD1EA;
+    z-index: 5;
+    border-color:  #363636;
+    border: 10px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header .title img {
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header img{
+    width: 50px;
+    height: 50px;
+    line-height: 200px;
+    float: left;
+}
+
+.header .title{
+    cursor: pointer;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+    color: #BAF2BB;
+    background-color: #363636;
+    border-radius: 50px;
+    font-family: "Allan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .title img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav{
+    float: right;
+    line-height: 250px;
+    z-index: 1;
+}
+
+.header .nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+.header .nav a:hover{
+    border-radius: 50px;
+    background: #A9EFAA;
+}
+
+
+.header2{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
+
+.header2 .title{
+    line-height: 100px;
+    font-size: 30px;
+    color: #BAF2BB;
+}
+
+.header2 img{
+    width: 30px;
+    height: auto;
+    line-height: 100px;
+    justify-content: center;
+
+}
+
+.header2 .nav{
+    line-height: 100px;
+}
+
+.nav_link{
+    background-color: #BAF2BB;
+    border-radius: 10px;
+}
+
+/*Imagenes de enlace*/
+.Imagenes{
+    padding: 5px;
+    flex:1 1 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.hearder .dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.hearder .dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.hearder .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hearder .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.hearder .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+/* icono de whatsapp*/
+.btn-wsp{
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    background-color: #0df053;
+    border: 1px solid #fff;
+    z-index: 900;
+    line-height: 55px;
+    bottom: 40px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+    padding: 5px;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+  
+}
+
+/*Imagenes reprentativas de los productos*/
+.Imagenes .ImagenPrincipal-1{
+    height: 800px;
+    width: 800px;
+    margin: 2px;
+    padding: 100px; 
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.Imagenes .ImagenPrincipal-2{
+    height: 800px;
+    width: 800px;
+    margin: 2px; 
+    padding: 100px; 
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.Imagenes .ImagenPrincipal-3{
+    height: 800px;
+    width: 800px;
+    margin: 2px;
+    padding: 100px; 
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.Imagenes img:hover{
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.imagen_text{
+    color: #363636;
+    font-size: 3.5rem;
+    font-family: "Allan", serif;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #BBD1EA;
+    text-decoration: none;
+    transition: transform 0.5;
+    unicode-bidi: isolate;
+    box-sizing: inherit;
+    width: 100%;
+}
+
+/*Creditos de donde saque las imagenes*/
+.Creditos{
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    justify-content: right;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*Texto informativo de la pagina*/
+.inicio{
+    padding: 20px;
+    flex: 1 1 70%;
+}
+
+.inicio .text {
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+/*Introduccion del usuario y la contraseña en "IniciarSesion.html" y "CrearUsuario.html"*/
+.Formulario{
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #BBD1EA;;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+
+    border-top: 20px solid #A9EFAA;
+    background: #BBD1EA;
+    width: 50%;
+    display: flex;
+    
+    margin-top: 0px;
+    unicode-bidi: isolate;
+    justify-content: center !important;
+}
+
+.Formulario .Usuario{
+    width: 100%;
+    padding: 50px;
+    margin: 15px 0;
+    max-width: 200px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Usuario{
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+}
+
+/*Link para ir a crear un nuevo usuario*/
+.label a{
+    text-decoration: none;
+    color: #363636;
+    transition-duration: 0.4s;
+    
+}
+
+.label a:hover{
+    background-color: #A9EFAA;
+    border-radius: 10px;
+}
+
+
+button:hover{
+    border-radius: 50px;
+    background: #363636;
+}
+
+button{
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: #A9EFAA;
+    color: #A9EFAA;
+
+    margin: 5px;
+    display: flex;
+    padding: 30pxs 5px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #000;
+    background: #363636;
+    border-radius: 5px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    text-decoration-color: white;
+    color: #BBD1EA;
+    text-align: center;
+}
+    
+
+/**/
+.title-ropa{
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+/*Imagenes utilizadas en la parte de ventas del sitio web*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+    opacity: 0.96;
+    z-index: -2;
+
+    margin-top: 0px;
+    unicode-bidi: isolate;
+    justify-content: center !important;
+}
+
+.galeria > .light-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    z-index: -2;
+}
+
+/*contenedor de cada imagen y/o Producto*/
+.galeria img{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    overflow: hidden;
+    opacity: 0.96;
+    
+}
+
+.galeria .light-box:hover img{
+    display: inline-block;
+    filter: blur(2px);
+    transform: rotate(10deg) scale(.8);
+    z-index: -2;
+}
+
+.light-box{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.light-box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    margin-top: 0px;
+    unicode-bidi: isolate;
+    justify-content: center !important;
+} 
+
+.light-box .seleccion{
+    border: none;
+    background: none;
+    background-color: #363636;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.seleccion{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/*El boton del carrito alojado debajo de cada imagen de venta*/
+.carrito{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    margin: 5px;
+    margin-bottom: 32px;
+    width: 50px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    padding: 0%;
+
+    border-radius: 5px;
+    background-color: #363636;
+}
+
+.carrito img {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    text-decoration: none;
+    transform: none;
+    transition: none;
+    background-color: #363636;
+}
+
+.carrito:hover img{
+    filter: none;
+    transform: none;
+    z-index: -1;
+}
+
+/*
+text-align: center;
+    text-decoration: none;
+    color: white;
+
+    margin: 5px;
+    display: flex;
+    padding: 30pxs 5px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #000;
+    background: #474448;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+*/
+
+/*Informacion del sitio web, provisional*/
+table {
+    text-align: left;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+}
+
+th,td{
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+}
+
+td a:hover{
+    color: 363636;
+}
+
+/*Footer o parte final del sitio web*/
+footer {
+    background-color: #BBD1EA;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    line-height: 25px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }    
+};
+
+.mb-5{
+    margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-lg-0 {
+    margin-bottom: 0 !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.Contacto{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    line-height: normal;
+    transition-duration: 0.4s;
+}
+
+footer a:hover{
+    border-radius: 50px;
+    background: #363636;
+}
+
+.copyright{
+    background-color: #363636;
+    box-sizing: border-box;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    width: 100%;
+    unicode-bidi: isolate;
+}
+
+@media screen and (max-width: 950px){
+
+    .header .title, .header .nav{
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    .header img{
+        width: 30px;
+        height: auto;
+    }
+
+    .header2 .title, .header2 .nav{
+        line-height: 50px;
+    }
+
+    .header2 img{
+        width: 30px;
+        height: auto;
+    }
+
+    .header nav{
+        width: 100%;
+    }
+
+    /*Galeria de Ropa*/
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .imagen_text{
+        font-size: 2.0rem;
+    }
+
+    .Creditos{
+        font-size: 8px;
+    }
+
+    footer{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .header .title, .header .nav{
+        font-size: 25px;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .Imagenes .ImagenPrincipal-1{
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .Imagenes .ImagenPrincipal-2{
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .Imagenes .ImagenPrincipal-3{
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .footer{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+
+    .mb-4 .text-uppercase .a{
+        width: 15px;
+        height: 15px;
+        flex: 0 0 auto;
+    }
+
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/header.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header"> 
+        <div class="contenedor">
+            <div><h1 class="title">MODANOW</h1></div> 
+            <nav class="nav">
+                <a href="index.html" class="nav_link"> <img src="img/casa.png"> </a> 
+                <a href="Ropa.html" class="nav_link"> <img src="img/moda.png"> </a> 
+                <a href="Contacto.html" class="nav_link"> <img src="img/atencion-al-cliente.png"> </a>
+                <a href="IniciarSesion.html" class="nav_link"> <img src="img/avatar.png" >  </a>
+            </nav>
+        </div>
+    </header>
+
+<br>
+    <section class="Formulario">
+        <form class="Usuario" action="/Iniciarsesion" method="POST">
+            <div>
+                <label class="label" for="Nombre_Usuario">Nombre:</label>
+                <br><br>
+                <input type="text" id="Nombre_Usuario" name="Nombre_Usuario" placeholder="Nombre" required>
+            </div>
+            <br>
+
+            <div>
+                <label class="label" for="Contraseña_Usuario">Contraseña:</label>
+                <br><br>
+                <input type="password" id="Contraseña_Usuario" name="Contraseña_Usuario" placeholder="Contraseña" required>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br> 
+
+            <div class="boton">
+                <button><a href="index.html" style=" text-decoration: none">Volver</a></button>
+            </div>
+            <div class="boton">
+                <button  type="submit" id="Enviar" name="Enviar">Entrar</button>
+            </div>
+            <br>
+            <div class="label">
+                <label>¿No tienes una cuenta? <a href="CrearUsuario.html">Crea una cuenta aquí.</a> </label>
+            </div>
+        </form>
+    </section>
+
+    <br>
+    <br>
+
+    <footer class="footer text-center">
+        <div class="Contacto">
+            <div class="row">
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Creador:</h4>
+                    <p class="lead mb-0">
+                        <a href="mailto: juanpagarsi18Qgmail.com">Juan Pablo Castañeda silva</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes sociales: </h4>
+                    <a href="#">
+                        <img alt="" src="img/facebook.png" loading="lazy">
+                    </a>
+
+                    <a href="#">
+                        <img alt="" src="img/instagram.png" loading="lazy">
+                    </a>
+
+                    <a href="#">
+                        <img alt="" src="img/whatsapp.png" loading="lazy">
+                    </a>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Imagenes de:</h4>
+                    <a href="https://www.flaticon.es/iconos-gratis/esquema-de-persona" title="esquema de persona iconos">Iconos de Flaticon</a><br>
+                    <a href="https://www.freepik.es/foto-gratis/retrato-hermosa-modelo-gafas-sol-mujer-vestida-jeans-camiseta-blanca-verano-hipster-chica-moda-posando-junto-pared-calle_16506626.htm#query=modelos%20de%20ropa&position=11&from_view=keyword&track=ais_hybrid&uuid=baba0d4d-01b8-4666-ab6e-923222606982"> Imagenes de Freepik</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="Contacto"><small>Copyright &copy; 2024 </small></div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Tienda</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatos Nike</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Audifonos</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Reloj</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Smartwatch</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Perfume</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
+-->
