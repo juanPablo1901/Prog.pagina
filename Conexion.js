@@ -148,7 +148,7 @@ app.post('/productos', (req, res) =>{
         const {Nombre_Producto, Valor_Producto, Cantidad_Productos, Marca_Producto, Codigo_Producto, Fecha_Devolucion} = req.body;
     
         // Insertar producto en la base de datos
-        const query = 'INSERT INTO productos (Nombre_Producto, Valor_Producto, Cantidad_Productos, Marca_Producto, Nit_Producto, Fecha_Devolucion) VALUES (?, ?, ?, ?, ?, ?)';
+        const query = 'INSERT INTO productos (Nombre_Producto, Valor_Producto, Cantidad_Productos, Marca_Producto, Codigo_Producto, Fecha_Devolucion) VALUES (?, ?, ?, ?, ?, ?)';
         db.query(query, [Nombre_Producto, Valor_Producto, Cantidad_Productos, Marca_Producto, Codigo_Producto, Fecha_Devolucion], (err, result) => {
           if (err) {
             console.error('Error al insertar producto:', err);
