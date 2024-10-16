@@ -30,119 +30,207 @@
         <a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos"></a>
         </a>
     </section>
-    
     <br>
+    <br>
+<center>
+    <section class="inicio">
+        <article class="text">
 
+            <h2>Carrito de Compras</h2>
+            <div id="carrito">
+                <button onclick="mostrarCarrito()">Mostrar Carrito</button>
+            </div>
+
+            <div class="carrito">
+                <h2>Carrito de Compras</h2>
+                <div id="lista-carrito"></div>
+                <p>Total: <span id="total">$0.00</span></p>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+            </div>
+
+        </article>
+    </section>
+</center>
+    
     <section class="galeria">
 
         <article class="light-box">
-            <img src="img/camisa1.jpg" alt="">
-                
+            <div class="imagenP">
+                <img id="imagen-producto" src="img/camisa1.jpg" alt="">
+            </div>
+            
+            <article class="text">
+                Camiseta corta 
+            </article>
+            <br> 
+            <article class="text">
+                $ 7.000 
+            </article> 
+            <br> 
             <div class="boton">
-                <button class="carrito" type="submit" id="Añadir" name="Añadir">
+                <button class="agregarcarrito" type="button" data-id="1" 
+                data-name="Camisa Corta" data-precio="7.000">
                     <img src="img/carro-de-la-compra.png"> 
             </button> 
             </div>
 
             <div class="seleccion">
-                <select>
-                    <option>Negro</option>
-                    <option>Rojo</option>
+                <select class="color-select">
+                    <option value="img/camisa1.jpg">Rojo</option>
+                    <option value="img/camisa2.jpg">Negro</option> 
                 </select>
             </div>
 
         </article>
 
         <article class="light-box">
-            <img src="img/camisa2.jpg">
-
-                <div class="boton">
-                    <button class="carrito" type="submit" id="Añadir" name="Añadir">
-                        <img src="img/carro-de-la-compra.png"> 
-                    </button> 
-                </div>
-
-                <div class="seleccion">
-                    <select>
-                        <option>Rosado</option>
-                        <option>Azul</option>
-                        <option>Verde</option>
-                    </select>
-                </div>
-
-        </article>
-
-        <article class="light-box">
-            <img src="img/saco1.jpg">
-
-            <div class="boton">
-                <button class="carrito" type="submit" id="Añadir" name="Añadir">
-                    <img src="img/carro-de-la-compra.png"> 
-                </button> 
+            <div class="imagenP">
+                <img id="imagen-producto" src="img/camisa2.jpg" alt="">
             </div>
             
+            <article class="text">
+                Camiseta corta
+            </article>
+            <br> 
+            <article class="text">
+                $ 5.000 
+            </article> 
+            <br>   
+            <div class="boton">
+                <button class="agregarcarrito" type="submit" data-id="Añadir" 
+                data-name="Añadir" data-precio="5.000">
+                    <img src="img/carro-de-la-compra.png"> 
+            </button> 
+            </div>
+
             <div class="seleccion">
-                <select>
-                    <option></option>
-                    <option></option>
+                <select class="color-select">
+                    <option value="img/camisa2.jpg">Negro</option>
+                    <option value="img/camisa3.jpg">Blanco</option>
                 </select>
             </div>
 
         </article>
 
         <article class="light-box">
-            <img src="img/saco2.jpg">
-
-            <div class="boton">
-                <button class="carrito" type="submit" id="Añadir" name="Añadir">
-                    <img src="img/carro-de-la-compra.png"> 
-                </button> 
-            </div>
-
-            <div class="seleccion">
-                <select>
-                    <option></option>
-                    <option></option>
-                </select>
+            <div class="imagenP">
+                <img id="imagen-producto" src="img/saco1.jpg" alt="">
             </div>
             
+            <article class="text">
+                Saco largo 
+                <br>
+                con capucha
+            </article>
+            <br>
+            <article class="text">
+                $ 2.000 
+            </article> 
+            <br>    
+            <div class="boton">
+                <button class="agregarcarrito" type="submit" data-id="Añadir" 
+                data-name="Añadir" data-precio="2.000">
+                    <img src="img/carro-de-la-compra.png"> 
+            </button> 
+            </div>
+
+            <div class="seleccion">
+                <select class="color-select">
+                    <option value="img/saco1.jpg">Blanco</option>
+                    <option value="img/saco2.jpg">Verde</option>
+                </select>
+            </div>
+
         </article>
 
         <article class="light-box">
-            <img src="img/saco3.jpg">
+            <div class="imagenP">
+                <img id="imagen-producto" src="img/saco2.jpg" alt="">
+            </div>
+            <br>
+            <article class="text">
+                Saco largo  
+                <br>
+                con Capucha
+            </article>
+            <br>  
+            <article class="text">
+                $ 4.000 
+            </article> 
+            <br>  
             <div class="boton">
-                <button class="carrito" type="submit" id="Añadir" name="Añadir">
+                <button class="agregarcarrito" type="submit" data-id="Añadir" 
+                data-name="Añadir" data-precio="4.000">
                     <img src="img/carro-de-la-compra.png"> 
                 </button> 
             </div>
 
             <div class="seleccion">
-                <select>
-                    <option></option>
-                    <option></option>
+                <select class="color-select">
+                    <option value="img/saco2.jpg">Rosado</option>
+                    <option value="img/saco3.jpg">Azul</option>
                 </select>
             </div>
-                
+        </article>
+
+        <article class="light-box">
+            <div class="imagenP">
+                <img id="imagen-producto"  src="img/saco3.jpg" alt="">
+            </div>
+            
+            <article class="text">
+                Saco Normal
+            </article>
+            <br>   
+            <article class="text">
+                $ 8.000 
+            </article> 
+            <br> 
+            <div class="boton">
+                <button class="agregarcarrito" type="submit" data-id="Añadir" 
+                data-name="Añadir" data-precio="8.000">
+                    <img src="img/carro-de-la-compra.png"> 
+            </button> 
+            </div>
+
+            <div class="seleccion">
+                <select class="color-select">
+                    <option value="img/saco3.jpg">Blanco</option>
+                    <option value="img/saco4.jpg">Negro</option>
+                </select>
+            </div>
         </article>
         
         <article class="light-box">
-            <img src="img/camisa4.jpg">
+            <div class="imagenP">
+                <img id="imagen-producto" src="img/camisa4.jpg" alt="Camisa Larga">
+            </div>
+            
+            <article class="text">
+                Camiseta Larga
+            </article>
+            <br>
+            <article class="text">
+                $ 3.000 
+            </article> 
+            <br>    
             <div class="boton">
-                <button class="carrito" type="submit" id="Añadir" name="Añadir">
+                <button class="agregarcarrito" type="submit" data-id="Añadir" 
+                data-name="Camiseta Larga" data-precio="3.000">
                     <img src="img/carro-de-la-compra.png"> 
-                </button> 
+            </button> 
             </div>
 
-            <div class="boton">
-                <select>
-                    <option></option>
-                    <option></option>
+            <div class="seleccion">
+                <select class="color-select">
+                    <option value="img/camisa4.jpg">Azul</option>
+                    <option value="img/camisa1.jpg">Rojo</option>
                 </select>
             </div>
-                
         </article>
         <br>
     </section>
+        
 
     <footer class="footer text-center">
         <div class="Contacto">
@@ -186,4 +274,118 @@
 
     <script src="js/script.js"></script>
 </body>
+
+<script>
+
+let carrito = [];
+
+// Seleccionar los elementos necesarios
+const listaCarrito = document.getElementById('lista-carrito');
+const totalCarrito = document.getElementById('total');
+
+// Función para agregar productos al carrito
+function agregarAlCarrito(event) {
+    const boton = event.target.closest('button');
+    const productoEnCarrito = carrito.find(item => item.id === boton.dataset.id);
+
+    if (productoEnCarrito) {
+        productoEnCarrito.cantidad++;
+    } else {
+        carrito.push({
+            id: boton.dataset.id,
+            nombre: boton.dataset.name,
+            precio: parseFloat(boton.dataset.precio),
+            cantidad: 1
+        });
+    }
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach(producto => {
+        const item = document.createElement('div');
+        item.classList.add('carrito-item');
+        item.innerHTML = `
+            <p>${producto.nombre} x ${producto.cantidad} - $${(producto.precio * producto.cantidad).toFixed(2)}</p>
+            <button class="eliminar-item" data-id="${producto.id}">Eliminar</button>`;
+        listaCarrito.appendChild(item);
+        total += producto.precio * producto.cantidad;
+    });
+    totalCarrito.innerText = `$${total.toFixed(2)}`;
+}
+
+// Función para eliminar productos del carrito
+function eliminarDelCarrito(event) {
+    const id = event.target.dataset.id;
+    carrito = carrito.filter(producto => producto.id !== id);
+    actualizarCarrito();
+}
+
+// Función para vaciar el carrito
+function vaciarCarrito() {
+    carrito = [];
+    actualizarCarrito();        
+}
+
+// Event Listeners
+document.querySelectorAll('.agregarcarrito').forEach(boton => {
+    boton.addEventListener('click', agregarAlCarrito);
+});
+
+listaCarrito.addEventListener('click', function(event) {
+    if (event.target.classList.contains('eliminar-item')) {
+        eliminarDelCarrito(event);
+    }
+});
+
+document.getElementById('vaciar-carrito').addEventListener('click', vaciarCarrito);
+
+function mostrarCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let carritoHTML = '';
+
+    if (carrito.length === 0) {
+        carritoHTML = '<p>El carrito está vacío.</p>';
+    } else {
+        carrito.forEach(producto => {
+            carritoHTML += `<p>${producto.nombre} - $${producto.precio}</p>`;
+        });
+    }
+    document.getElementById('carrito').innerHTML = carritoHTML;
+}
+
+
+//Cambio de imagnes con el select
+const galeria = document.querySelector('.galeria');
+
+const selectsColor = galeria.querySelectorAll('.color-select');
+
+function cambiarImagen(event) {
+
+    const select = event.target;
+    const producto = select.closest('.light-box');
+    
+    if (producto) {
+        const imagenProducto = producto.querySelector('.imagen-producto');
+        
+        if (imagenProducto) {
+            imagenProducto.src = select.value;
+        } else {
+            console.error('No se encontró la imagen en este producto.');
+        }
+    } else {
+        console.error('No se encontró el contenedor del producto.');
+    }
+}
+
+selectsColor.forEach(select => {
+    select.addEventListener('change', cambiarImagen);
+});
+
+</script>
 </html>
+
+
